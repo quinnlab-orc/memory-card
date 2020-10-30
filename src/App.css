@@ -1,0 +1,61 @@
+.App {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 1px black;
+  width: 60px;
+  height: 60px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+img:hover {
+  transition: .2s;
+  background-color: tomato;
+}
+
+.github {
+  background-color: white;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  margin-top: 35%;
+}
+
+
+.pieces {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center; 
+  align-self: center;
+  border: 5px solid black;
+  border-radius: 20px;
+  height: 150px;
+  width: 425px;
+  margin-top: 10px;
+  background-color: white;
+} 
+
+h3 {
+  height: 60px;
+  width: 60px;
+  border: 5px solid black;
+  border-radius: 15px;
+  margin-top: 10px;
+  font-size: larger;
+  font-weight: bolder;
+  background-color: white;
+}
+
+h1 {
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 15px;
+}
