@@ -1,0 +1,49 @@
+.App {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  width: 45%;
+  margin-top: 10%;
+  background-color: lightcyan;
+  box-shadow: 5px 10px 2px 0px lightslategray;
+  /* padding: 10px 10px 10px 0px; */
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  width: 45%;
+  margin-top: 10%;
+  background-color: lightcyan;
+  box-shadow: 5px 10px 2px 0px lightslategray;
+}
+
+.submit {
+  margin: 10px 0 10px 0;
+}
+
+.duties {
+  min-height: 100px;
+  width: 80%;
+  margin-top: 5px;
+}
+
+input, textarea {
+  border-radius: 7px;
+}
