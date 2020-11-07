@@ -11,21 +11,36 @@ img {
   box-shadow: 2px 2px 1px black;
   width: 60px;
   height: 60px;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 
 img:hover {
   transition: .2s;
   background-color: tomato;
+  height: 63px;
+  width: 63px;
+}
+
+.pieceHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  margin: 5px 0 5px 0;
 }
 
 .github {
+  margin-top: 15%;
+}
+
+.myNewClass {
   background-color: white;
   border-radius: 100%;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   margin-top: 35%;
+  box-shadow: none;
+  border: none;
 }
 
 
@@ -58,4 +73,13 @@ h1 {
   background-color: white;
   border: 5px solid black;
   border-radius: 15px;
+}
+
+.rules {
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 15px;
+  margin-top: 30px;
+  padding: 0 10px 0 10px;
+  font-weight: bold;
 }

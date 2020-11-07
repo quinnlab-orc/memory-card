@@ -12,7 +12,7 @@ import wknight from "./pieces/wknight.png";
 import wpawn from "./pieces/wpawn.png";
 import wqueen from "./pieces/wqueen.png";
 import wrook from "./pieces/wrook.png";
-import github from "./GitHub-Mark-32px.png"
+import github from "./GitHub-Mark-32px.png";
 
 function App() {
   const imageArray = [
@@ -56,6 +56,8 @@ function App() {
     }
   };
 
+  //make a practice mode which highlights previously selected pieces00
+
   const pickTracker = (img) => {
     for (let i = 0; i < selected.length; i++) {
       if (selected[i] === img) {
@@ -74,28 +76,48 @@ function App() {
 
   const isWinner = () => {
     if (score === 11) {
-      alert("You won! Congrats")
-      setHighScore(12)
+      alert("You won! Congrats");
+      setHighScore(12);
     }
-  }
+  };
+
+  const githubLink = () => {
+    return <a href="https://www.github.com/quinnlab-orc">hi </a>;
+  };
 
   return (
     <div className="App">
       <h1>Memory-Card Game</h1>
-      <div> <h3 className="score">Score: {score}</h3><h3 className="score"> Best: {highScore}</h3></div> 
+      <div>
+        <h3> Best: {highScore}</h3>
+        <h3>Score: {score}</h3>
+      </div>
       <div className="pieces">
         {images.map((image) => {
           return (
-            <img
-              key={image}
-              src={image}
-              alt="pieces"
-              onClick={() => handleClick(image)}
-            ></img>
+            <div className="pieceHolder">
+              <img
+                key={image}
+                src={image}
+                alt="pieces"
+                onClick={() => handleClick(image)}
+              ></img>
+            </div>
           );
         })}
       </div>
-      <img className="github" src={github} alt="https://github.com/quinnlab-orc"></img>
+      <div className="rules">
+        <p>Don't click the same piece twice!</p>
+        <p>Max possible score is 12</p>
+      </div>
+      <a href="https://www.github.com/quinnlab-orc" className="github">
+        <img
+          className="myNewClass"
+          src={github}
+          alt="https://github.com/quinnlab-orc"
+          onClick={githubLink()}
+        ></img>
+      </a>
     </div>
   );
 }
